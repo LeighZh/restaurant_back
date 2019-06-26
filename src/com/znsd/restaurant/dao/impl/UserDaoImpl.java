@@ -12,40 +12,40 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoImpl implements UserDao{
+public class UserDaoImpl implements UserDao {
 
 	@Override
 	public boolean userLogin(String name,String password) {
-//		Connection connection = DBUtils.getConnection();
-//		PreparedStatement prepare = null;
-//		PreparedStatement prepareTwo = null;
-//		ResultSet query = null;
-//		try {
-//			prepare = connection.prepareStatement("select userName from user where userName=? and password=? and sign='正常'");
-//			prepare.setString(1, name);
-//			prepare.setString(2, password);
-//			query = prepare.executeQuery();
-//			if(query.next()){
-//				prepareTwo = connection.prepareStatement("UPDATE USER SET lastTime = NOW() WHERE userName = ? and sign='正常'");
-//				prepareTwo.setString(1, name);
-//				prepareTwo.execute();
-//				return true;
-//			}
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		} finally{
-//			try {
-//				if(query!=null)
-//					query.close();
-//				if(prepare!=null)
-//					prepare.close();
-//				if(connection!=null)
-//					connection.close();
-//			} catch (SQLException e) {
-//				e.printStackTrace();
-//			}
-//		}
-		return true;
+		Connection connection = DBUtils.getConnection();
+		PreparedStatement prepare = null;
+		PreparedStatement prepareTwo = null;
+		ResultSet query = null;
+		try {
+			prepare = connection.prepareStatement("select userName from user where userName=? and password=? and sign='正常'");
+			prepare.setString(1, name);
+			prepare.setString(2, password);
+			query = prepare.executeQuery();
+			if(query.next()){
+				prepareTwo = connection.prepareStatement("UPDATE USER SET lastTime = NOW() WHERE userName = ? and sign='正常'");
+				prepareTwo.setString(1, name);
+				prepareTwo.execute();
+				return true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			try {
+				if(query!=null)
+					query.close();
+				if(prepare!=null)
+					prepare.close();
+				if(connection!=null)
+					connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return false;
 	}
 
 	public boolean register(UserBean userBean){
@@ -152,33 +152,33 @@ public class UserDaoImpl implements UserDao{
 		Connection connection = DBUtils.getConnection();
 		PreparedStatement prepare = null;
 		ResultSet query = null;
-//		try {
-//			prepare = connection.prepareStatement("select userName from user where userName=? and password=? and sign='正常' AND (SELECT roleId FROM user_role WHERE userId in (SELECT userId FROM USER WHERE userName = ?))!=1");
-//			prepare.setString(1, name);
-//			prepare.setString(2, password);
-//			prepare.setString(3, name);
-//			query = prepare.executeQuery();
-//			if(query.next()){
-//				return true;
-//			}
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		} finally{
-//			try {
-//				if(query!=null)
-//					query.close();
-//				if(prepare!=null)
-//					prepare.close();
-//				if(connection!=null)
-//					connection.close();
-//			} catch (SQLException e) {
-//				e.printStackTrace();
-//			}
-//		}
+		try {
+			prepare = connection.prepareStatement("select loginName from admin where loginName=? and loginPwd=? !=0");
+			prepare.setString(1, name);
+			prepare.setString(2, password);
+			query = prepare.executeQuery();
+			if(query.next()){
+				System.out.println(name + "登陆成功");
+				return true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			try {
+				if(query!=null)
+					query.close();
+				if(prepare!=null)
+					prepare.close();
+				if(connection!=null)
+					connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 		return false;
 	}
 	
-	public List<RecordBean> queryRecord(String name,int start,int pageCount){
+	public List<RecordBean> queryRecord(String name, int start, int pageCount){
 		Connection connection = DBUtils.getConnection();
 		PreparedStatement prepare = null;
 		ResultSet query = null;
@@ -258,7 +258,7 @@ public class UserDaoImpl implements UserDao{
 		}
 	}
 	
-	public List<UserBean> afterQuery(int start,int pageSize){
+	public List<UserBean> afterQuery(int start, int pageSize){
 		Connection connection = DBUtils.getConnection();
 		PreparedStatement prepare = null;
 		ResultSet query = null;

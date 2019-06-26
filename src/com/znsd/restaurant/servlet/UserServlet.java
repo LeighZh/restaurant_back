@@ -105,16 +105,15 @@ public class UserServlet extends HttpServlet {
 	public void afterRegister(HttpServletRequest request, HttpServletResponse response,UserService userServlet){
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
-		boolean afterRegister = true;
-		//userServlet.afterRegister(name, password);
-//		if(afterRegister){
-//			request.getSession().setAttribute("name", name);
-//		}
-//		try {
-//			response.getWriter().print(JSON.toJSONString(afterRegister));
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+		boolean afterRegister = userServlet.afterRegister(name, password);
+		if(afterRegister){
+			request.getSession().setAttribute("name", name);
+		}
+		try {
+			response.getWriter().print(JSON.toJSONString(afterRegister));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void queryRecord(HttpServletRequest request, HttpServletResponse response,UserService userServlet){

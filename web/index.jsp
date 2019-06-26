@@ -5,10 +5,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>后台登录</title>
-
-
-
-
   <link rel="stylesheet" href="front/css/supersized.css">
   <link rel="stylesheet" href="front/css/login.css">
   <link href="front/css/bootstrap.min.css" rel="stylesheet">
@@ -30,12 +26,12 @@
         <form action="####" id="login_form" method="post">
           <div class="form-group">
             <label for="j_username" class="t">账   号：</label>
-            <input id="email" value="" name="email" type="text" class="form-control x319 in"
+            <input id="email" value="admin" name="email" type="text" class="form-control x319 in"
                    autocomplete="off">
           </div>
           <div class="form-group">
             <label for="j_password" class="t">密　码：</label>
-            <input id="password" value="" name="password" type="password"
+            <input id="password" value="123456" name="password" type="password"
                    class="password form-control x319 in">
           </div>
           <div class="form-group space">
@@ -116,12 +112,12 @@
                     url: "/userServlet",
                     data:"judge=afterRegister&name="+$("#email").val()+"&password="+$("#password").val(),
                     success:function(message){
-                        //if(message == "true"){
+                        if(message == "true"){
                         show_msg('登录成功，  正在为您跳转...','/afterManage/frame.jsp');
-                        // }else{
-                        // 	show_err_msg('账号或密码错误，登录失败！');
-                        // 	$('#email').focus();
-                        // }
+                        }else{
+                        	show_err_msg('账号或密码错误，登录失败！');
+                        	$('#email').focus();
+                        }
                     }
                 })
             }
