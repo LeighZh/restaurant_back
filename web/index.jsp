@@ -41,7 +41,7 @@
           <div class="form-group space">
             <label class="t"></label>
             <button type="button"  id="submit_btn"
-                    class="btn btn-primary btn-lg">&nbsp;登&nbsp;录&nbsp </button>
+                    class="btn btn-primary btn-lg">&nbsp;登&nbsp;录&nbsp </button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <input type="reset" value="&nbsp;重&nbsp;置&nbsp;" class="btn btn-default btn-lg">
           </div>
         </form>
@@ -78,10 +78,10 @@
             // Components
             slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
             slides             : [    // Slideshow Images
-                {image : 'front/images/backgrounds/0.jpg'},
-                {image : 'front/images/backgrounds/1.jpg'},
-                {image : 'front/images/backgrounds/2.jpg'},
-                {image : 'front/images/backgrounds/3.jpg'}
+                {image : 'front/images/backgrounds/01.jpg'},
+                {image : 'front/images/backgrounds/02.jpg'},
+                {image : 'front/images/backgrounds/03.jpg'},
+                {image : 'front/images/backgrounds/00.jpg'}
             ]
 
         });
