@@ -40,7 +40,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .fl { float:left!important; }
 .fr { float:right!important; }
 .bold {font-weight:bold}
-#gotop { position:fixed; bottom:2px; right:5px; height:58px; width:58px; background:url(../images/gotop.png) no-repeat 0 0; display:block; text-indent:9999px; overflow:hidden }
+#gotop { position:fixed; bottom:2px; right:5px; height:58px; width:58px; background:url(../../images/gotop.png) no-repeat 0 0; display:block; text-indent:9999px; overflow:hidden }
 
 ::-moz-selection {
  text-shadow: none;
@@ -99,7 +99,7 @@ a.linkbutton, a.linkbuttonsmall, a.linkbuttonlarge, a.linkbuttonbig  {text-align
 /* header */
 #header { min-height:100px }
 .headerstrip { height:28px; text-indent:-99999px; display:block; overflow:hidden; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); margin-bottom:80px }
-.spiral {width:100%; height:100px ; background:  url("../images/spiral.png") repeat-x scroll 0 0; position:absolute; top:9px}
+.spiral {width:100%; height:100px ; background:  url("../../images/spiral.png") repeat-x scroll 0 0; position:absolute; top:9px}
 #logo {; float:left }
 /* Top Navigation */
 nav#topnav select { display: none; }
@@ -117,7 +117,7 @@ nav#topnav select { display: none; }
 #topnav ul ul ul { top: 1px; left: 100%; }
 #topnav ul li ul li { display:block; width:100%; position:relative;  padding:5px 5px 5px 10px; border-bottom:1px solid #685f5e; text-align:left; margin:0px; height:32px}
 #topnav ul li ul li a  {font-family:Calibri, Arial, Helvetica, sans-serif; font-size:13px; text-align:left; background:none; display:block;  width:100%; padding:8px 0}
-#topnav li.submenu > a { background: url(../images/smallarrowwhite.png) no-repeat 184px 15px!important; display:block; width:100% }
+#topnav li.submenu > a { background: url(../../images/smallarrowwhite.png) no-repeat 184px 15px!important; display:block; width:100% }
 
 /* Column */
 .widthcolumn4, .widthcolumn3, .widthcolumn2, .widthcolumn2-one, .widthcolumn3-one, .widthcolumn5, .widthcolumn6, .widthcolumn8 { float:left; margin-right:20px }
@@ -135,20 +135,20 @@ nav#topnav select { display: none; }
 /* flexslider */
 
 
-#flexslider { padding:10px 10px 15px 10px; width: 940px; margin: 20px auto 80px auto; clear:both; position:relative;   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); background: #fff url("../images/linebottom.png") repeat-x scroll left bottom;}
+#flexslider { padding:10px 10px 15px 10px; width: 940px; margin: 20px auto 80px auto; clear:both; position:relative;   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom;}
 .flexslider .slides li { display: none; position: relative; list-style:none }
 .flexslider .slides img { max-width: 100%; }
 .flexslider-container { position: relative; }
 #flexslider .flex-caption { width: 96%; padding: 2%; left: 7%; top: 40%; color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, .3); font-size: 15px;font-family: 'Lobster', cursive; font-size:32px; text-shadow: 1px 1px 1px #fff; margin:0px }
 #flexslider .flex-caption b { font-weight:normal; font-size:22px }
 #flexslider .flex-caption span { font-size:16px; font-family: 'Crete Round', serif; margin-top:10px; }
-.flex-direction-nav li a { width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 45%; cursor: pointer; text-indent: -9999px; }
+.flex-direction-nav li a { width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(../../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 45%; cursor: pointer; text-indent: -9999px; }
 .flex-direction-nav li a.next { background-position: -52px 0; right: -15px; }
 .flex-direction-nav li a.prev { background-position: 0 0; left: -15px; }
 .flex-control-nav { margin-left: -31px; position: absolute; bottom: 15px; right: 15px; }
 .flex-control-nav li { margin: 0 0 0 5px; float: left; }
 .flex-control-nav li:first-child { margin: 0; }
-.flex-control-nav li a { width: 13px; height: 13px; display: block; background: url(../images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px; }
+.flex-control-nav li a { width: 13px; height: 13px; display: block; background: url(../../images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px; }
 .flex-control-nav li a:hover { background-position: 0 -13px; }
 .flex-control-nav li a.active { background-position: 0 -26px; cursor: default; }
 
@@ -164,7 +164,7 @@ nav#topnav select { display: none; }
 
 /* Side bar */
 .sidecontainer {margin:0 0 30px 0}
-.sidecontainer h4.heading4 {background: #508706 url("../images/crossline.png") repeat 0 0; color:#fff; padding:5px 10px }
+.sidecontainer h4.heading4 {background: #508706 url("../../images/crossline.png") repeat 0 0; color:#fff; padding:5px 10px }
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /* Latest Blog  */
 #carousel { margin:20px auto 30px auto }
@@ -172,55 +172,55 @@ h2.titles { font-family: 'Lobster', cursive; font-size:30px; padding: 0 0 25px 0
 .es-carousel-wrapper { position:relative; }
 .es-carousel { overflow:hidden; }
 .es-carousel ul { margin-right:-56px; display:none; }
-.es-carousel ul li { display:inline-block; height:100%; float:left; display:block; margin-bottom:20px;  padding:7px 7px 14px 7px; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom;  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+.es-carousel ul li { display:inline-block; height:100%; float:left; display:block; margin-bottom:20px;  padding:7px 7px 14px 7px; background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom;  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
 .es-carousel ul li img { display:block; border:none; max-height:100%; max-width:100%; }
 .es-carousel ul li a { display:block; margin-bottom:10px; }
 .es-carousel ul li h3 { font-family: 'Crete Round', serif; font-size:18px; font-weight:normal; margin-bottom:8px }
 .es-carousel ul li span.deatils { clear:both; float:left; margin-bottom:12px }
 .es-carousel ul li span.deatils b { font-weight:normal }
-.es-nav span { position:absolute; top:14px; right:44px; background:transparent url(../images/nav.png) no-repeat top left; width:40px; height:40px; margin-top:-13px; text-indent:-9000px; cursor:pointer; opacity:0.8; }
+.es-nav span { position:absolute; top:14px; right:44px; background:transparent url(../../images/nav.png) no-repeat top left; width:40px; height:40px; margin-top:-13px; text-indent:-9000px; cursor:pointer; opacity:0.8; }
 .es-nav span.es-nav-next { right:0px; left:auto; background-position:top right; }
 .es-nav span:hover { opacity:1.0; }
-.es-carousel ul li span.date { background:transparent url(../images/blogicon.png) no-repeat top left; padding:0 10px 0 34px; float:left }
-.es-carousel ul li span.comment { background:transparent url(../images/blogicon.png) no-repeat bottom left; padding:0 0 0 34px; float:left }
+.es-carousel ul li span.date { background:transparent url(../../images/blogicon.png) no-repeat top left; padding:0 10px 0 34px; float:left }
+.es-carousel ul li span.comment { background:transparent url(../../images/blogicon.png) no-repeat bottom left; padding:0 0 0 34px; float:left }
 
 /*  Recipelist  */
 ul.recipelist {display:block}
-ul.recipelist > li { display:block; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom;  margin:0 14px 25px 14px; padding:6px 6px 15px 6px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; }
+ul.recipelist > li { display:block; background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom;  margin:0 14px 25px 14px; padding:6px 6px 15px 6px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; }
 ul.recipelist > li .recipegridimage { margin:0 15px 0 0; float:left }
 ul.recipelist a.fancyboxpopup { list-style: none outside none; position: relative; display:inline-block; }
 ul.recipelist li a.title { font-size: 18px; font-style: italic; display: block; font-style:normal; font-family: 'Crete Round', serif; line-height:32px }
 ul.recipelist li .recipedetails {padding:6px; display:block;  }
-ul.recipelist li span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
+ul.recipelist li span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
 ul.recipelist li a:hover span.view { display:block; position:absolute; z-index:999; margin-top:-55% }
 
 /* Recipegrid  */
-ul.recipegrid > li { display:inline-block; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom;  margin:0 14px 25px 14px; padding:6px 6px 14px 6px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; width:275px }
+ul.recipegrid > li { display:inline-block; background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom;  margin:0 14px 25px 14px; padding:6px 6px 14px 6px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; width:275px }
 ul.recipegrid > li .recipegridimage { margin:0 0 5px  0; display:block}
 ul.recipegrid a.fancyboxpopup { list-style: none outside none; position: relative; display:inline-block; }
 ul.recipegrid li a.title { font-size: 18px; font-style: italic; display: block; font-style:normal; font-family: 'Crete Round', serif; line-height:32px }
 ul.recipegrid li .recipedetails {padding:6px; display:block; }
-ul.recipegrid li span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
+ul.recipegrid li span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
 ul.recipegrid li a:hover span.view { display:block; position:absolute; z-index:999; margin-top:-55% }
 ul.recipegrid.recipe2column > li {width:425px;}
 
 
 /* Recipedetails */
 .recipedetailtitle { font-family: 'Crete Round', serif!important}
-.receipedtailsnote {float:right; width:250px;  background: url("../images/receipenote.png") repeat scroll top center transparent;  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); margin-top:10px; padding:70px 20px 20px 20px}
+.receipedtailsnote {float:right; width:250px;  background: url("../../images/receipenote.png") repeat scroll top center transparent;  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); margin-top:10px; padding:70px 20px 20px 20px}
 
 /* footer  */
 #footer { padding:0px 0 5px 0; margin:40px 0 0 0; clear:both; overflow:auto }
 .footerbg { padding:25px 0; }
 .leftline { float:left; margin-top:16px; }
 ul.footersection > li { display:inline-block; width:21%; padding:0 2%; float:left }
-ul.footersection li h4 { font-family:'Lobster', cursive; font-size:26px; font-weight:normal; padding:0 0 0 43px; background:url(../images/footericon.png) no-repeat; margin-bottom:15px }
+ul.footersection li h4 { font-family:'Lobster', cursive; font-size:26px; font-weight:normal; padding:0 0 0 43px; background:url(../../images/footericon.png) no-repeat; margin-bottom:15px }
 ul.footersection li.links h4 { background-position:0 -111px }
 ul.footersection li.testimonial h4 { background-position:0 -155px }
 ul.footersection li.testimonial span { float:right; text-align:right }
 ul.footersection li.twiitersection h4 { background-position:0 -246px }
 ul.footersection li.flickrsection h4 { background-position:0 -196px }
-ul.footersection li ul li { display:block; background:url(../images/smallarrow.png) no-repeat 0 5px; padding: 0 0 0 14px }
+ul.footersection li ul li { display:block; background:url(../../images/smallarrow.png) no-repeat 0 5px; padding: 0 0 0 14px }
 ul.footersection li ul li a { line-height:24px }
 /* footer twitter  */
 #twitter ul { margin-bottom:20px }
@@ -231,7 +231,7 @@ a.tweet_avatar {margin:5px 5px 5px 0; float:left}
 .tweet_time {clear:both}
 /* footersocial  */
 #footersocial { float:right; margin-top:10px }
-#footersocial a { background:url(../images/footericon.png) no-repeat; height:28px; width:28px; margin-left:12px; float:left; text-indent:-9999px; overflow:hidden; display:block; margin-bottom:5px }
+#footersocial a { background:url(../../images/footericon.png) no-repeat; height:28px; width:28px; margin-left:12px; float:left; text-indent:-9999px; overflow:hidden; display:block; margin-bottom:5px }
 #footersocial a.facebook { background-position:0 -6px }
 #footersocial a.facebook:hover { background-position:0 -47px }
 #footersocial a.twitter { background-position:-40px -6px }
@@ -259,20 +259,20 @@ a.tweet_avatar {margin:5px 5px 5px 0; float:left}
 .heading4 { font-size:20px; font-weight:normal; margin:0px 0 15px 0; font-family: 'Crete Round',serif !important; }
 .heading5 { font-size:16px; font-weight:normal; margin:25px 0 5px 0; font-family:Arial, Helvetica, sans-serif; border-bottom:1px dashed #999; padding: 0 0 10px 0 }
 p { line-height:22px; margin-bottom:10px }
-.imgbrdleft { float:left; padding: 7px 7px 14px 7px; margin:20px 20px 20px 0 ; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);}
-.imgbrdrihgt { float:right; padding: 7px 7px 14px 7px; margin:20px 0 20px 20px;  background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+.imgbrdleft { float:left; padding: 7px 7px 14px 7px; margin:20px 20px 20px 0 ; background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);}
+.imgbrdrihgt { float:right; padding: 7px 7px 14px 7px; margin:20px 0 20px 20px;  background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
 ul.listoption1, ul.listoption2, ul.listoption3, ul.listoption4, ul.listoption5, ul.listoption6, ul.foodicon, ul.blogcaterg { margin:0px; padding:0px; list-style:none }
 ul.listoption1 li, ul.listoption2 li, ul.listoption3 li, ul.listoption4 li, ul.listoption5 li, ul.listoption6 li{ display:block; padding:5px 0 5px 20px }
 ul.archieve li { display:block; padding:10px 0 10px 30px; -moz-transition: all .2s ease;  -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; } 
 ul.blogcaterg li { display:block; padding:10px 0 10px 30px; -moz-transition: all .2s ease;  -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; } 
-ul.listoption1 li { background: url("../images/list1.png") no-repeat scroll 0 5px; padding:5px 0 5px 25px }
-ul.listoption2 li { background: url("../images/list2.png") no-repeat scroll 0 5px; }
-ul.listoption3 li { background: url("../images/list3.png") no-repeat scroll 0 9px; padding:5px 0 5px 15px }
-ul.listoption4 li { background: url("../images/list4.png") no-repeat scroll 0 9px; }
-ul.listoption5 li { background: url("../images/list5.png") no-repeat scroll 0 10px; padding:5px 0 5px 15px }
-ul.listoption6 li { background: url("../images/list6.png") no-repeat scroll 0 10px; }
-ul.archieve li { background: url("../images/archieve.png") no-repeat scroll 0 10px; border-bottom: 1px dashed #ccc; }
-ul.blogcaterg li { background: url("../images/foodicon.png") no-repeat scroll 0 6px; border-bottom: 1px dashed #ccc; }
+ul.listoption1 li { background: url("../../images/list1.png") no-repeat scroll 0 5px; padding:5px 0 5px 25px }
+ul.listoption2 li { background: url("../../images/list2.png") no-repeat scroll 0 5px; }
+ul.listoption3 li { background: url("../../images/list3.png") no-repeat scroll 0 9px; padding:5px 0 5px 15px }
+ul.listoption4 li { background: url("../../images/list4.png") no-repeat scroll 0 9px; }
+ul.listoption5 li { background: url("../../images/list5.png") no-repeat scroll 0 10px; padding:5px 0 5px 15px }
+ul.listoption6 li { background: url("../../images/list6.png") no-repeat scroll 0 10px; }
+ul.archieve li { background: url("../../images/archieve.png") no-repeat scroll 0 10px; border-bottom: 1px dashed #ccc; }
+ul.blogcaterg li { background: url("../../images/foodicon.png") no-repeat scroll 0 6px; border-bottom: 1px dashed #ccc; }
 
 ul.archieve li a, ul.blogcaterg li a{color:#333}
 ul.archieve li:hover, ul.blogcaterg li:hover { padding:10px 0 10px 36px;  -moz-transition: all .2s ease;  -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease;
@@ -284,8 +284,8 @@ table.tableclass th { background-color: #dcdcd7; border: 1px solid #d1d1cb; padd
 table.tableclass td { border: 1px solid #d1d1cb; padding: 10px; }
 table.tableclass tr { -moz-transition:background 0.5s ease 0s; }
 table.tableclass tr:hover { background:#d1d1cb; -moz-transition:background 0.5s ease 0s; }
-blockquote.style1 { background: url("../images/blockquotestyle.png") no-repeat scroll 17px 21px #F8F8F8; padding: 20px 20px 20px 60px; font-family: 'Lobster', cursive; font-size:18px; font-weight:normal!important; margin:10px 0; font-style:normal }
-blockquote { background: url("../images/blockquote.png") no-repeat scroll 17px 21px #F8F8F8; padding: 20px 20px 20px 60px; font-size:16px; font-style:italic; margin:10px 0 }
+blockquote.style1 { background: url("../../images/blockquotestyle.png") no-repeat scroll 17px 21px #F8F8F8; padding: 20px 20px 20px 60px; font-family: 'Lobster', cursive; font-size:18px; font-weight:normal!important; margin:10px 0; font-style:normal }
+blockquote { background: url("../../images/blockquote.png") no-repeat scroll 17px 21px #F8F8F8; padding: 20px 20px 20px 60px; font-size:16px; font-style:italic; margin:10px 0 }
 /* Author */
 
 #team { margin:15px auto; padding: 0 0 30px 0 }
@@ -296,7 +296,7 @@ ul.team li img { padding:7px; margin-bottom:10px; margin-top:12px; background:#e
 ul.team li h3.membername { font-family: 'Crete Round', serif; font-size:18px; color:#483B3A; font-weight:normal; margin:0 0 5px 0 }
 ul.team li:hover .social { display:block }
 .social { display:none; position:absolute; bottom:10px; text-align:center }
-.social a { background:url(../images/footericon.png) no-repeat; height:28px; width:28px; margin:0 3px; text-indent:-9999px; overflow:hidden; display:block; margin-bottom:5px; display:inline-block }
+.social a { background:url(../../images/footericon.png) no-repeat; height:28px; width:28px; margin:0 3px; text-indent:-9999px; overflow:hidden; display:block; margin-bottom:5px; display:inline-block }
 .social a.facebook { background-position:0 -6px }
 .social a.facebook:hover { background-position:0 -47px }
 .social a.twitter { background-position:-40px -6px }
@@ -338,13 +338,13 @@ ul.sitemap > li > a { font-size:20px; }
 #filters a.selected { text-align:center; text-shadow:none; border:1px solid #fff; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  -webkit-border-radius:6px; box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); }
 #recipecontainer { display:block; overflow:hidden; margin:0 auto; }
 #recipecontainer > ul { text-align:center }
-#recipecontainer > ul > li { display:inline-block;  background-color:#fff;  margin:0 14px 25px 14px; padding:4px 4px 15px 4px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; }
+#recipecontainer > ul > li { display:inline-block;  background-color:#fff;  margin:0 14px 25px 14px; padding:4px 4px 15px 4px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; }
 #recipecontainer ul.hidden { display:none; }
 #recipecontainer ul a.fancyboxpopup { list-style: none outside none; position: relative; display:inline-block; }
 #recipecontainer ul li a.title { font-size: 18px; font-style: italic; display: block; font-style:normal; font-family: 'Crete Round', serif; line-height:32px }
 #recipecontainer ul li .recipedetails {padding:8px; display:block}
 #recipecontainer ul li a span.category { color: #555; content: attr(data-description); font-size: 11px; font-style: italic; display: block; text-align: left; text-transform: lowercase; text-align:center; text-align:center; }
-#recipecontainer ul li span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
+#recipecontainer ul li span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
 #recipecontainer ul li a:hover span.view { display:block; position:absolute; z-index:999; margin-top:-55% }
 .isotope-item { z-index: 2; }
 .isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
@@ -356,27 +356,27 @@ ul.sitemap > li > a { font-size:20px; }
 /**** Base styles ****/
 .element { overflow: hidden; position: relative; display:inline-block; }
 .element img { position:static }
-.recipeslider { margin: 0 auto; clear:both; position:relative; margin-top:20px;  background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
+.recipeslider { margin: 0 auto; clear:both; position:relative; margin-top:20px;  background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
 .recipeflexslider .flex-caption { display:none }
 .recipeflexslider { position:relative; }
-.recipeslider a span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
+.recipeslider a span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
 .recipeslider a:hover span.view { display:block }
 .singlerecipeleft { width:620px; float:left; margin-right:20px }
 .singlereciperight { width:300px; float:left }
 
 
-.mostrated { padding:10px; margin: 0 auto; clear:both; position:relative; margin-top:20px; margin-bottom:10px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
-.mostrated a span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
+.mostrated { padding:10px; margin: 0 auto; clear:both; position:relative; margin-top:20px; margin-bottom:10px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
+.mostrated a span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
 .mostrated a:hover span.view { display:block }
 
 
 /**** Blog ****/
 .blogright { width:260px; float:left; }
-.bloggallery { padding:10px; margin: 0 auto; clear:both; position:relative; margin-top:20px; margin-bottom:25px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
-.bloggallery a span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
+.bloggallery { padding:10px; margin: 0 auto; clear:both; position:relative; margin-top:20px; margin-bottom:25px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
+.bloggallery a span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
 .bloggallery a:hover span.view { display:block }
-.blogslider { margin: 20px auto 35px; clear:both; position:relative; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
-.blogslider span.view { background: url("../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
+.blogslider { margin: 20px auto 35px; clear:both; position:relative; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom; padding:10px 10px 18px 10px }
+.blogslider span.view { background: url("../../images/view.png") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; position:absolute; z-index:99; top:45%; height:70px }
 .blogslider a:hover span.view { display:block }
 .leftpart { width:640px; float:left; margin-right:40px }
 .blogtitle { padding:0px!important }
@@ -385,15 +385,15 @@ ul.sitemap > li > a { font-size:20px; }
 ul.popular li { display:block; margin:10px 0; clear:both }
 ul.popular li img { height:60px; width:60px; float:left; padding:5px; border:1px solid #D6D4CB; margin:0 10px 10px 0 }
 .entry-meta { color: #777; font-size: 13px; margin-bottom: 15px; display:inline-block }
- ul.rate li {height:20px; width:20px; background: url("../images/rate.png") no-repeat scroll 0 0 transparent; display:inline-block; margin-right:5px}
+ ul.rate li {height:20px; width:20px; background: url("../../images/rate.png") no-repeat scroll 0 0 transparent; display:inline-block; margin-right:5px}
  ul.rate li.on  {background-position:left top}
  ul.rate li.off {background-position:left -24px}
 
 .publisheddate { text-align:center; float:right; font-size:12px }
-.publisheddate span.date { background: url("../images/daticon.png") no-repeat scroll center center transparent; width:35px; height:31px; ; font-size:18px; text-align:center; margin:0 auto 3px auto; line-height:32px; display:block }
+.publisheddate span.date { background: url("../../images/daticon.png") no-repeat scroll center center transparent; width:35px; height:31px; ; font-size:18px; text-align:center; margin:0 auto 3px auto; line-height:32px; display:block }
 a.entrytitle { font-size:16px; margin-bottom:8px; }
 .blogserach { width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  
-background: #ffffff url("../images/search.png") no-repeat center right;  }
+background: #ffffff url("../../images/search.png") no-repeat center right;  }
 .blogother { border:1px dashed #D6D4CB; padding:14px 0 15px 0 }
 .blogother img { height:80px; width:80px; padding:5px; background:#fff; border:1px solid #D6D4CB; float:left; margin:0 10px 10px 0 }
 .blogother .author { font-size:22px; }
@@ -419,17 +419,17 @@ ul.thirdchildcomment { margin-left:75px }
 
 .accrodian-trigger { padding:8px 8px 8px 8px; display:block; margin:5px 0; border:1px solid #D6D4CB; cursor:pointer }
 .togglehandle { padding:8px 8px 8px 8px; display:block; margin:5px 0; cursor:pointer }
-.errormsg, .alertmsg, .successmsg, .infomsg, .infomsg2 { padding:15px 8px 15px 50px; margin:18px 0; display:block; background: url("../images/messages.png") no-repeat 8px 0px; position:relative }
+.errormsg, .alertmsg, .successmsg, .infomsg, .infomsg2 { padding:15px 8px 15px 50px; margin:18px 0; display:block; background: url("../../images/messages.png") no-repeat 8px 0px; position:relative }
 .errormsg { background-color:#FCCAC1; border:1px solid #E18B7C; background-position:8px -69px }
 .alertmsg { background-color:#FFE9AD; border:1px solid #EAC572; background-position:8px -214px }
 .successmsg { background-color:#EFFEB9; border:1px solid #C1D779; background-position:8px -144px }
 .infomsg { background-color:#DEEEFA; border:1px solid #AFD3F2; background-position:8px 5px }
 .infomsg2 { background-color:#fff; border:1px solid #AFD3F2; background-position:8px 5px }
-a.clostalert { position:absolute; right:5px; top:5px; background: url("../images/messages.png") no-repeat 0 -310px; cursor:pointer; text-indent:9999px; overflow:hidden; height:15px; width:15px }
+a.clostalert { position:absolute; right:5px; top:5px; background: url("../../images/messages.png") no-repeat 0 -310px; cursor:pointer; text-indent:9999px; overflow:hidden; height:15px; width:15px }
 #tabdata1, #tabdata2, #tabdata3, #tabdata4, #tabdata5  {overflow:auto}
 .tabs { position:relative; z-index:1 }
 .tabs li { padding:8px 8px 8px 8px; border-bottom:none; display:inline-block }
-.tabdata { padding:10px; margin-top:-1px; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom;  border:1px solid #D6D4CB; }
+.tabdata { padding:10px; margin-top:-1px; background: #fff url("../../images/linebottom.png") repeat-x scroll left bottom;  border:1px solid #D6D4CB; }
 ul.tags li { display:inline-block; margin:7px 5px }
 ul.tags li a { display:inline-block; padding:3px 10px; background:#AB381B; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px }
 /**** Contact form ****/
@@ -475,7 +475,7 @@ box-sizing: border-box;
 
 #topnavmobile {
 display:none;
-background:#483B3A url(../images/texturebg.png) repeat 0;
+background:#483B3A url(../../images/texturebg.png) repeat 0;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
@@ -487,7 +487,7 @@ font-size:24px;
 text-shadow:#fff 1px 1px 1px
 }
 #topnavmobile span {
-background:url(../images/mobilemuarrow.png) no-repeat right 0px;
+background:url(../../images/mobilemuarrow.png) no-repeat right 0px;
 display:block;
 height:30px;
 }
