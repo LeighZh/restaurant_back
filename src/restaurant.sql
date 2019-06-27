@@ -133,6 +133,20 @@ CREATE TABLE `subsetOrder` (
 
 /*Data for the table `mealseries` */
 
+DROP TABLE IF EXISTS `authority`;
+
+CREATE TABLE `authority` (
+  `text` varchar(20)  COMMENT '权限名称',
+  `listName` VARCHAR(20) DEFAULT NULL COMMENT '列标题',
+  `iconCls` VARCHAR(20) DEFAULT NULL COMMENT '功能按钮图片',
+  `name` VARCHAR(20) DEFAULT NULL COMMENT '存员工或老板',
+  PRIMARY KEY  (`text`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='权限';
+
+insert into authority (text,listName) values ("消费管理","消费管理"),("订单管理","订单管理"),("菜谱管理","菜谱管理"),("菜系管理","菜系管理"),("类型管理","类型管理"),("用户评价","用户评价"),("用户查询","用户查询"),("餐桌管理","餐桌管理");
+
+/*Data for the table `mealseries` */
+
 
 
 
