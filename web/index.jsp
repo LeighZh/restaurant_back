@@ -49,8 +49,8 @@
 
 <!-- Javascript -->
 
-<script src="front/js/supersized.3.2.7.min.js"></script>
-<script src="front/js/scripts.js"></script>
+<script src="/js/supersized.3.2.7.min.js"></script>
+<script src="/js/scripts.js"></script>
 <script type="text/javascript">
     jQuery(function($){
 
@@ -113,7 +113,7 @@
                     data:"judge=afterRegister&name="+$("#email").val()+"&password="+$("#password").val(),
                     success:function(message){
                         if(message == "true"){
-                        show_msg('登录成功，  正在为您跳转...','/afterManage/frame.jsp');
+                        //show_msg('登录成功，  正在为您跳转...','/afterManage/frame.jsp');
                         }else{
                         	show_err_msg('账号或密码错误，登录失败！');
                         	$('#email').focus();

@@ -30,7 +30,7 @@
 						success:function(message){
 							console.info(message);
 							if(message == "true"){
-								show_msg('登录成功咯！  正在为您跳转...','/index.jsp');
+								show_msg('登录成功咯！  正在为您跳转...','/index.html');
 							}else{
 								show_err_msg('账号或密码错误！');
 								$('#email').focus();
