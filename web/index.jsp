@@ -5,12 +5,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>后台登录</title>
-  <link rel="stylesheet" href="front/css/supersized.css">
-  <link rel="stylesheet" href="front/css/login.css">
+  <link rel="stylesheet" href="/static/css/supersized.css">
+  <link rel="stylesheet" href="/static/css/login.css">
   <link href="front/css/bootstrap.min.css" rel="stylesheet">
   <script src="front/js/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" src="front/js/jquery.form.js"></script>
-  <script type="text/javascript" src="front/js/tooltips.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.form.js"></script>
+  <script type="text/javascript" src="/static/js/tooltips.js"></script>
+  <script type="text/javascript" src="/static/js/supersized.3.2.7.min.js"></script>
+  <script type="text/javascript" src="/static/js/scripts.js"></script>
 </head>
 
 <body>
@@ -49,8 +51,6 @@
 
 <!-- Javascript -->
 
-<script src="/js/supersized.3.2.7.min.js"></script>
-<script src="/js/scripts.js"></script>
 <script type="text/javascript">
     jQuery(function($){
 
@@ -113,7 +113,7 @@
                     data:"judge=afterRegister&name="+$("#email").val()+"&password="+$("#password").val(),
                     success:function(message){
                         if(message == "true"){
-                        //show_msg('登录成功，  正在为您跳转...','/afterManage/frame.jsp');
+                         show_msg('登录成功，  正在为您跳转...','/index.html');
                         }else{
                         	show_err_msg('账号或密码错误，登录失败！');
                         	$('#email').focus();
