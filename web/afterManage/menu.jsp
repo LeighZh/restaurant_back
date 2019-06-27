@@ -6,15 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <!--jquery文件-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/static/easyui/jquery.min.js"></script>
 <!--easyui核心文件-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/static/easyui/jquery.easyui.min.js"></script>
 <!--对应的语言包-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/static/easyui/locale/easyui-lang-zh_CN.js"></script>
 <!--皮肤文件-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="/static/easyui/themes/default/easyui.css" />
 <!--图标文件-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="/static/easyui/themes/icon.css" />
 </head>
 <body>
 	<input type="text" style="position:absolute;top:15px;left:100px;z-index: 2"  placeholder="请输入用户名" id='likeName'>
@@ -22,7 +22,7 @@
 	<div id="add"></div>
 	<script type="text/javascript">
 		$('#dg').datagrid({
-		    url:'/restaurant/MenuServlet?judge=afterQuery',
+		    url:'/MenuServlet?judge=afterQuery',
 		    //int menuId, String menuName, double price, int vegetableId, String picture, int userCount, int good,
 			//int general, int bad, Date addTime,String menuType,String describe
 		    columns:[[
@@ -69,7 +69,7 @@
 						 onChange:function(newValue,oldValue){
 							 console.info(newValue);//修改框值
 							 $.ajax({
-								url : "/restaurant/MenuServlet",
+								url : "/MenuServlet",
 								type : "POST",
 								data : {
 									judge:"mod",
@@ -105,7 +105,7 @@
 						array[i]=allData[i].menuId;
 					}
 					$.ajax({
-						url: "/restaurant/MenuServlet?judge=delete",
+						url: "/MenuServlet?judge=delete",
 						data:"name="+array,
 						success:function(message){
 							$('#dg').datagrid('reload');
@@ -123,7 +123,7 @@
 		
 		function like(){
 			$('#dg').datagrid({
-				url: "/restaurant/MenuServlet",
+				url: "/MenuServlet",
 				queryParams: {
 					judge: 'likeAfterQuery',
 					likeName: $("#likeName").val()

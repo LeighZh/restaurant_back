@@ -7,22 +7,22 @@
 <title>Insert title here</title>
 </head>
 <!--jquery文件-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/static/easyui/jquery.min.js"></script>
 <!--easyui核心文件-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/static/easyui/jquery.easyui.min.js"></script>
 <!--对应的语言包-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/static/easyui/locale/easyui-lang-zh_CN.js"></script>
 <!--皮肤文件-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="/static/easyui/themes/default/easyui.css" />
 <!--图标文件-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="/static/easyui/themes/icon.css" />
 <body>
 	<!-- <input type="text" style="position:absolute;top:15px;left:100px;z-index: 2"  placeholder="请输入用户名" id='likeName'> -->
 	<table id="dg"></table>
 	<div id="add"></div>
 	<script type="text/javascript">
 		$('#dg').datagrid({
-		    url:'/restaurant/IndextSelectServlet?fame=菜系',
+		    url:'/IndextSelectServlet?fame=菜系',
 		    columns:[[
 		        {field:'i',checkbox:true},
 		        {field:'vegetableId',title:'菜系id',hidden:true},
@@ -47,7 +47,7 @@
 					 $(editor.target).focus();
 					  $(editor.target).blur(function(){
 						 	$.ajax({
-								url : "/restaurant/MyDeleteServlet",
+								url : "/MyDeleteServlet",
 								type : "POST",
 								data : {
 									judge:"Typealter",
@@ -83,7 +83,7 @@
 						array[i]=allData[i].vegetableId;
 					}
 					$.ajax({
-						url: "/restaurant/CookingServlet?select=delete",
+						url: "/CookingServlet?select=delete",
 						data:"name="+array,
 						success:function(message){
 							$('#dg').datagrid('reload');
@@ -104,7 +104,7 @@
 			    height: 300,
 			    closed: false,
 			    cache: false,
-			    href: '/restaurant/cooking/cookingadd.jsp',
+			    href: '/cooking/cookingadd.jsp',
 			    modal: true 
 			});
 		}

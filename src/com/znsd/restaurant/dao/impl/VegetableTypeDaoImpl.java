@@ -18,12 +18,12 @@ public class VegetableTypeDaoImpl  extends DBUtils implements VegetableTypeDao {
 		//String[] st = line.split(",");//列表每列
 		String tab = "[";
 		 try {
-			 pr= con.prepareStatement("SELECT vegetableid,vegetableName,ADDTIME FROM vegetableType where sign='正常' ORDER BY ADDTIME  LIMIT ?,?");
-			 pr.setObject(1, first);
-			 pr.setObject(2, Integer.parseInt(pageSize));
+			 pr= con.prepareStatement("SELECT seriesID,seriesName FROM mealseries limit ?,?");
+			 pr.setInt(1, first);
+			 pr.setInt(2, Integer.parseInt(pageSize));
 			 ex = pr.executeQuery();
 			 while(ex.next()){
-				tab+="{\"vegetableId\":\""+ex.getObject(1)+"\",\"菜系名称\":\""+ex.getObject(2)+"\",\"增加时间\":\""+ex.getObject(3)+"\"},";
+				tab+="{\"vegetableId\":\""+ex.getObject(1)+"\",\"菜系名称\":\""+ex.getObject(2)+"\"},";
 			 } 
 			 tab = tab.substring(0,tab.length()-1);
 			 tab+="]";
@@ -50,7 +50,7 @@ public class VegetableTypeDaoImpl  extends DBUtils implements VegetableTypeDao {
 		PreparedStatement pr =null;
 		ResultSet ex = null;
 		 try {
-			 pr= con.prepareStatement("SELECT count(1) FROM vegetableType where sign='正常'");
+			 pr= con.prepareStatement("SELECT count(1) FROM mealseries");
 			 ex = pr.executeQuery();
 			 ex.next();
 			 return ex.getInt(1);

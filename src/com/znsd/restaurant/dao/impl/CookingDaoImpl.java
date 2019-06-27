@@ -14,7 +14,7 @@ public class CookingDaoImpl implements CookingDao{
 	@Override
 	public String add(String name) {
 		Connection con=DBUtils.getConnection();
-		String sql="insert into vegetabletype(vegetableName,addTime,sign) values(?,Now(),'正常')";
+		String sql="insert into mealseries(seriesName) values(?)";
 		PreparedStatement pre=null;
 		try {
 			pre=con.prepareStatement(sql);
@@ -32,7 +32,7 @@ public class CookingDaoImpl implements CookingDao{
 	public void delete(String name) {
 		// TODO Auto-generated method stub
 		Connection con=DBUtils.getConnection();
-		String 	sql="update vegetabletype set sign='删除' where vegetableid in(?)";
+		String 	sql="delete seriesName from mealseries where seriesName=name ";
 		PreparedStatement pre=null;
 		try {
 			pre=con.prepareStatement(sql);

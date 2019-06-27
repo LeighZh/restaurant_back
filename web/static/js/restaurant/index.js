@@ -26,7 +26,7 @@ $(document).ready(function () {
                     });
                 }else if(node.text == "菜谱管理"){
                     $('#center').tabs('add',{
-                        content:"<iframe src='menu.jsp' width='99%' height='99%'></iframe>",
+                        content:"<iframe src='/afterManage/menu.jsp' width='99%' height='99%'></iframe>",
                         title:node.text,
                         border:true,
                         tabWidth:100,
@@ -35,7 +35,7 @@ $(document).ready(function () {
                     });
                 }else if(node.text == "菜系管理"){
                     $('#center').tabs('add',{
-                        content:"<iframe src='vegetableType.jsp' width='99%' height='99%'></iframe>",
+                        content:"<iframe src='/afterManage/vegetableType.jsp' width='99%' height='99%'></iframe>",
                         title:node.text,
                         border:true,
                         tabWidth:100,

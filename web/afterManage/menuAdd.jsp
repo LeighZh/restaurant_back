@@ -6,15 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <!--jquery文件-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/static/easyui/jquery.min.js"></script>
 <!--easyui核心文件-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/static/easyui/jquery.easyui.min.js"></script>
 <!--对应的语言包-->
-<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/static/easyui/locale/easyui-lang-zh_CN.js"></script>
 <!--皮肤文件-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="/static/easyui/themes/default/easyui.css" />
 <!--图标文件-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="/static/easyui/themes/icon.css" />
 </head>
 <body>
 				<!-- {field:'menuName',title:'菜谱名称',width:"9%"},
@@ -28,7 +28,7 @@
 		        {field:'addTime',title:'增加时间',width:"9%"},
 		        {field:'menuType',title:'菜谱类型',width:"9%"},
 		        {field:'describe',title:'菜谱描述',width:"9%"} -->
-	<form id="form" method="POST" action="/restaurant/MenuServlet?judge=add">
+	<form id="form" method="POST" action="/MenuServlet?judge=add">
 		<table>
 			<tr>
 				<td>菜谱名称：</td>
@@ -88,7 +88,7 @@
 		$("#submit").click(function(){
 			$.ajax({
 			    type: "POST",
-			    url: "/restaurant/MenuServlet",
+			    url: "/MenuServlet",
 			    data: "judge=add&menuname="+$("#menuName").val()+"&price="+$("#price").val()+"&cook="+$("#combo").val()+"&menutype="+$("#combo2").val()+"&describe="+$("#describe").val(),
 			    success:function(data){
 			    	$("#dg").datagrid("reload");
