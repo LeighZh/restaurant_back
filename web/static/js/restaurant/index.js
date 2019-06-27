@@ -63,7 +63,7 @@ $(document).ready(function () {
                     });
                 }else if(node.text == "用户查询"){
                     $('#center').tabs('add',{
-                        content:"<iframe src='userManage.jsp' width='99%' height='99%'></iframe>",
+                        content:"<iframe src='/restaurant/user/userManage.html' width='99%' height='99%'></iframe>",
                         title:node.text,
                         border:true,
                         tabWidth:100,
